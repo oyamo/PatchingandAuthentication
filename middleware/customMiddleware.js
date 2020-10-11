@@ -5,7 +5,7 @@ require('dotenv').load()
 // Credit for regular expression - https://stackoverflow.com/a/47767860/2377343
 exports.fileExtension = (url) => { return url.split('.').pop().split(/\#|\?/)[0] }
 
-// Verify token
+// Verifying the token
 exports.verifyToken = (req, res, next) => {
   const { token } = req.headers
   // Return forbidden status if the token is not available
