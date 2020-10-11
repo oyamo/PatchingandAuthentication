@@ -4,7 +4,7 @@ const request = require('supertest')
 const app = require('../app')
 
 
-describe('HackerBay Stateless Microservice', () => {
+describe('Json Patching and Authentication', () => {
   // Create dummy login data
   const loginDetails = { username: 'someone', password: 'awesome' }
   // Create token variable to save user token
