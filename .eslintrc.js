@@ -1,4 +1,5 @@
 module.exports = {
+    // defining everything
     "env": {
         "browser": true,
         "es6": true

@@ -10,5 +10,5 @@ COPY . .
 
 EXPOSE 3000
 
-# Command to run the app
+# Command to start the app on the local host
 CMD [ "npm", "start" ]
