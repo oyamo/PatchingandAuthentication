@@ -4,7 +4,7 @@ const { sanitizeBody } = require('express-validator/filter')
 require('dotenv').load()
 
 exports.user_login_post = [
-  // Validate input fields. Trim spaces around username
+  // Validating the input fields. Trim spaces around username
   body('username', 'Username required.').isLength({ min: 3 }).trim(),
   body('password', 'Password must atleast 6 characters.').isLength({ min:6 }),
   // Sanitize body with the wildcard.
