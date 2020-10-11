@@ -6,7 +6,7 @@ const { fileExtension } = require('../middleware/customMiddleware')
 
 const imageTypes = ['jpg', 'tif', 'gif', 'png', 'svg']
 
-// Resize image on post.
+// Resize image 
 exports.create_thumbnail_post = (req, res, next) => {
   // Save image url and extension.
   const { imageUrl } = req.body
